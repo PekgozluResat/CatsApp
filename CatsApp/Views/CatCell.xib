@@ -16,11 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="361" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23G-JW-XsN">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23G-JW-XsN">
                         <rect key="frame" x="83" y="40" width="273" height="40"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="40" id="17o-Vb-IZM"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -42,16 +39,15 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="23G-JW-XsN" secondAttribute="bottom" constant="10" id="4RG-jA-PNx"/>
+                    <constraint firstItem="23G-JW-XsN" firstAttribute="top" secondItem="dby-v4-k8L" secondAttribute="bottom" constant="1" id="8bw-34-4xI"/>
                     <constraint firstAttribute="trailing" secondItem="dby-v4-k8L" secondAttribute="trailing" constant="5" id="HEP-iV-Nd0"/>
                     <constraint firstAttribute="bottom" secondItem="6ke-nr-8Oi" secondAttribute="bottom" constant="10" id="QEt-vp-Ojr"/>
+                    <constraint firstAttribute="trailing" secondItem="23G-JW-XsN" secondAttribute="trailing" constant="5" id="RpH-md-3yM"/>
                     <constraint firstItem="6ke-nr-8Oi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VeD-eH-F7G"/>
-                    <constraint firstAttribute="trailing" secondItem="23G-JW-XsN" secondAttribute="trailing" constant="5" id="WGB-PI-ehS"/>
-                    <constraint firstItem="23G-JW-XsN" firstAttribute="leading" secondItem="6ke-nr-8Oi" secondAttribute="trailing" constant="8" id="gCT-JF-5ek"/>
+                    <constraint firstAttribute="bottom" secondItem="23G-JW-XsN" secondAttribute="bottom" constant="10" id="ba1-5l-VCe"/>
                     <constraint firstItem="dby-v4-k8L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gNl-QA-WR0"/>
-                    <constraint firstItem="23G-JW-XsN" firstAttribute="top" secondItem="dby-v4-k8L" secondAttribute="bottom" constant="1" id="n3d-HR-eso"/>
                     <constraint firstItem="6ke-nr-8Oi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="oYu-Fm-bNo"/>
-                    <constraint firstItem="23G-JW-XsN" firstAttribute="top" secondItem="dby-v4-k8L" secondAttribute="bottom" constant="1" id="p1J-c1-aSc"/>
+                    <constraint firstItem="23G-JW-XsN" firstAttribute="leading" secondItem="6ke-nr-8Oi" secondAttribute="trailing" constant="8" id="stj-C6-FGj"/>
                     <constraint firstItem="dby-v4-k8L" firstAttribute="leading" secondItem="6ke-nr-8Oi" secondAttribute="trailing" constant="8" id="v17-E5-pkl"/>
                 </constraints>
             </tableViewCellContentView>

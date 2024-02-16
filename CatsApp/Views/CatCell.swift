@@ -15,7 +15,7 @@ class CatCell: UITableViewCell {
     
     static let identifier = "CatCell"
     
-    static let height = 90.0
+    static let height = 120.00
     
     static func nib() -> UINib {
         return UINib(nibName: "CatCell", bundle: nil)
