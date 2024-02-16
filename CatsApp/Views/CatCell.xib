@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatCell" rowHeight="90" id="KGk-i7-Jjw" customClass="CatCell" customModule="CatsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23G-JW-XsN">
+                        <rect key="frame" x="83" y="40" width="273" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="17o-Vb-IZM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ke-nr-8Oi">
+                        <rect key="frame" x="5" y="10" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="6ke-nr-8Oi" secondAttribute="height" multiplier="1:1" id="dpT-SE-ZDC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dby-v4-k8L">
+                        <rect key="frame" x="83" y="10" width="273" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="MGk-jc-na5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="23G-JW-XsN" secondAttribute="bottom" constant="10" id="4RG-jA-PNx"/>
+                    <constraint firstAttribute="trailing" secondItem="dby-v4-k8L" secondAttribute="trailing" constant="5" id="HEP-iV-Nd0"/>
+                    <constraint firstAttribute="bottom" secondItem="6ke-nr-8Oi" secondAttribute="bottom" constant="10" id="QEt-vp-Ojr"/>
+                    <constraint firstItem="6ke-nr-8Oi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VeD-eH-F7G"/>
+                    <constraint firstAttribute="trailing" secondItem="23G-JW-XsN" secondAttribute="trailing" constant="5" id="WGB-PI-ehS"/>
+                    <constraint firstItem="23G-JW-XsN" firstAttribute="leading" secondItem="6ke-nr-8Oi" secondAttribute="trailing" constant="8" id="gCT-JF-5ek"/>
+                    <constraint firstItem="dby-v4-k8L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gNl-QA-WR0"/>
+                    <constraint firstItem="23G-JW-XsN" firstAttribute="top" secondItem="dby-v4-k8L" secondAttribute="bottom" constant="1" id="n3d-HR-eso"/>
+                    <constraint firstItem="6ke-nr-8Oi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="oYu-Fm-bNo"/>
+                    <constraint firstItem="23G-JW-XsN" firstAttribute="top" secondItem="dby-v4-k8L" secondAttribute="bottom" constant="1" id="p1J-c1-aSc"/>
+                    <constraint firstItem="dby-v4-k8L" firstAttribute="leading" secondItem="6ke-nr-8Oi" secondAttribute="trailing" constant="8" id="v17-E5-pkl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="catImageView" destination="6ke-nr-8Oi" id="Q7Z-3S-4Jc"/>
+                <outlet property="descriptionLabel" destination="23G-JW-XsN" id="x3q-1I-4oR"/>
+                <outlet property="titleLabel" destination="dby-v4-k8L" id="1d4-bW-VEp"/>
+            </connections>
+            <point key="canvasLocation" x="9.9236641221374047" y="-92.253521126760575"/>
+        </tableViewCell>
+    </objects>
+</document>
